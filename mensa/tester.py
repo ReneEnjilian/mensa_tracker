@@ -13,3 +13,9 @@ print(month)
 print(day)
 new_date = year + "-" + month + "-" + day
 print(new_date)
+
+
+def test():
+    for i in range(5):
+        print("hi")
+    

@@ -4,8 +4,8 @@ from datetime import date,  timedelta
 from datetime import datetime as dt
 import calendar
 
-
 def calculate_days():
+
 
     current_day = dt.today().strftime('%Y-%m-%d')
     today = date.fromisoformat(current_day)
@@ -18,12 +18,15 @@ def calculate_days():
 
     return dates_as_string
 
-    
-    
+
+def start_scrapers():
+    dates = calculate_days()
+
+    for i in range(5):
+        call(['scrapy', 'crawl', 'AllTU', '-a', 'id=321', '-a', 'date='+dates[i]])
 
 
 
 
 
-#print(calculate_days())
-
+start_scrapers()

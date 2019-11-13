@@ -31,5 +31,6 @@ class TUMarchstrasse(scrapy.Spider):
             marchstr[field] = category_divs[i].xpath('.//span/text()').getall()
             marchstr[field_price] = category_divs[i].xpath('.//div[contains(@class, "col-xs-6") and contains(@class, "col-md-3") and contains(@class, "text-right")]/text()').getall()
         yield marchstr
+        
             
             

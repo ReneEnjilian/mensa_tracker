@@ -1,4 +1,4 @@
-from mensa.controller import calculate_days
+from  .starter import calculate_days
 
 
 class DataCleaningPipeline(object):
