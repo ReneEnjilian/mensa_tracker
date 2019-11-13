@@ -9,7 +9,7 @@ def calculate_days():
 
     current_day = dt.today().strftime('%Y-%m-%d')
     today = date.fromisoformat(current_day)
-    print(today)
+    #print(today)
     dates = [today + datetime.timedelta(days=i) for i in range(0 - today.weekday(), 7 - today.weekday())]
     dates_as_string = []
     for i in range(7):
@@ -23,11 +23,12 @@ def calculate_days():
 
 def start_scrapers():
     dates = calculate_days()
-    for i in range(5):
-        call(['scrapy', 'crawl', 'Marchstrasse', '-a', 'id=538', '-a', 'date='+dates[i]])
+    #for i in range(5):
+        #call(['scrapy', 'crawl', 'AllTU', '-a', 'id=538', '-a', 'date='+dates[i]])
+    call(['scrapy', 'crawl', 'AllTU', '-a', 'id=538', '-a', 'date='+dates[0]])
     
 
 
 
-calculate_days()
-#start_scrapers()
+#print(calculate_days())
+start_scrapers()
