@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'mensa.data_cleaning_pipelines.DataCleaningPipeline': 1000,
+    'mensa.data_cleaning_pipelines.DataCleaningPipeline': 100,
     'mensa.db_pipelines.DBPipeline': 200,
 }
 

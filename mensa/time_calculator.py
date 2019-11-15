@@ -1,8 +1,8 @@
-from subprocess import call
 import datetime
 from datetime import date,  timedelta
 from datetime import datetime as dt
 import calendar
+
 
 
 def calculate_days():
@@ -17,13 +17,3 @@ def calculate_days():
         dates_as_string.append(date_item)
 
     return dates_as_string
-
-    
-    
-
-
-
-
-
-#print(calculate_days())
-
