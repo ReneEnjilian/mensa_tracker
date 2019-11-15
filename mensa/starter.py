@@ -6,7 +6,6 @@ import calendar
 from time_calculator import calculate_days
 
 
-
 def start_scrapers():
     dates = calculate_days()
     call_cafeterias(dates)
