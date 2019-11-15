@@ -1,6 +1,7 @@
 import scrapy
 from scrapy.http import FormRequest
 from mensa.items import Mensa
+import os
 # test
 #from mathe_cafe_spider import Mathecafe
 
@@ -31,6 +32,6 @@ class TUMarchstrasse(scrapy.Spider):
             marchstr[field] = category_divs[i].xpath('.//span/text()').getall()
             marchstr[field_price] = category_divs[i].xpath('.//div[contains(@class, "col-xs-6") and contains(@class, "col-md-3") and contains(@class, "text-right")]/text()').getall()
         yield marchstr
-        
+
             
             
