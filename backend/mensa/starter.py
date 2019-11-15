@@ -11,7 +11,7 @@ def start_scrapers():
     #call_cafeterias(dates)
     call_mathe_cafe()
     #call_personalkantine()
-
+    #print("heyyyyyyyyyy")
 def call_cafeterias(dates):
     cafeteria_ids = ['321', '631', '540', '657', '538', '539']
     #cafeteria_ids = ['321', '631']
@@ -27,5 +27,5 @@ def call_personalkantine():
 
     
 
-start_scrapers()
+#start_scrapers()
 
