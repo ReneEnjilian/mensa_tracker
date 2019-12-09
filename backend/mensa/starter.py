@@ -11,10 +11,9 @@ def start_scrapers():
     #call_cafeterias(dates)
     call_mathe_cafe()
     #call_personalkantine()
-    #print("heyyyyyyyyyy")
 def call_cafeterias(dates):
-    cafeteria_ids = ['321', '631', '540', '657', '538', '539']
-    #cafeteria_ids = ['321', '631']
+    #cafeteria_ids = ['321', '631', '540', '657', '538', '539']
+    cafeteria_ids = ['321', '631']
     for id in cafeteria_ids:
         for i in range(5):
             call(['scrapy', 'crawl', 'AllTU', '-a', 'id='+id, '-a', 'date='+dates[i]])

@@ -66,7 +66,7 @@ ROBOTSTXT_OBEY = False
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'mensa.data_cleaning_pipelines.DataCleaningPipeline': 100,
-    'mensa.db_pipelines.DBPipeline': 200,
+    'mensa.db_pipelines.DBPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

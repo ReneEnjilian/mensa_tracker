@@ -8,6 +8,8 @@
 import scrapy
 
 class Mensa(scrapy.Item):
+    mensa_name = scrapy.Field()
+    mensa_id = scrapy.Field()
     date = scrapy.Field()
     vorspeisen = scrapy.Field()
     vorspeisen_preis = scrapy.Field()
@@ -25,6 +27,8 @@ class Mensa(scrapy.Item):
     desserts_preis = scrapy.Field()
 
 class Personal(scrapy.Item):
+    mensa_name = scrapy.Field()
+    mensa_id = scrapy.Field()
     date = scrapy.Field()
     first = scrapy.Field()
     first_price = scrapy.Field()

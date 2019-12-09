@@ -4,3 +4,4 @@ SQLAlchemy
 Werkzeug
 Flask-SQLAlchemy
 Scrapy==1.7.3
+Flask-Migrate
