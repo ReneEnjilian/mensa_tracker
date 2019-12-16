@@ -1,0 +1,9 @@
+version: '3'
+
+services: 
+  backend:
+    build: './backend'
+    ports:
+      - '4000:80'
+    volumes:
+      - './backend:/app'
