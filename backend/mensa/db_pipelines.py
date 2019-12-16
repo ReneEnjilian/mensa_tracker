@@ -26,6 +26,8 @@ class DBPipeline(object):
        
         return wanted_fields
 
+    def get_mensa_name(self, item):
+        pass
 
     def insert_mathe_cafe(self, item):
         #mensa_name = item["mensa_name"][0]
