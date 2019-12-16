@@ -39,7 +39,7 @@ class DataCleaningPipeline(object):
     
     def adjust_prices_all(self, item):
         for field in item:
-            if "preis" in field:
+            if "price" in field:
                 field_len = len(item[field])
                 for i in range(field_len):
                     if item[field][i] is '':

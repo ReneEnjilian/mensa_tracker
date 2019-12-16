@@ -33,7 +33,7 @@ class TUMarchstrasse(scrapy.Spider):
         for i in range(len(category_divs)):
             category = category_divs[i].xpath('.//div[@class="row"]/div/text()').get()
             field = category.lower()
-            field_price = field + '_preis'
+            field_price = field + '_price'
             all[field] = category_divs[i].xpath('.//span/text()').getall()
             all[field_price] = category_divs[i].xpath('.//div[contains(@class, "col-xs-6") and contains(@class, "col-md-3") and contains(@class, "text-right")]/text()').getall()
             
