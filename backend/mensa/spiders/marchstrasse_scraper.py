@@ -29,6 +29,10 @@ class TUMarchstrasse(scrapy.Spider):
         mensa_id_list = []
         mensa_id_list.append(mensa_id)
         all["mensa_id"] = mensa_id_list
+        mensa_name = TUMarchstrasse.name
+        mensa_name_list = []
+        mensa_name_list.append(mensa_name)
+        all["mensa_name"] = mensa_name_list
 
         for i in range(len(category_divs)):
             category = category_divs[i].xpath('.//div[@class="row"]/div/text()').get()

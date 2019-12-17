@@ -103,7 +103,7 @@ class DataCleaningPipeline(object):
             date_as_list.append(dates[3])
             item["date"] = date_as_list
         elif current_date == 'Freitag':
-            date_as_list.append(dates[3])
+            date_as_list.append(dates[4])
             item["date"] = date_as_list
 
 
