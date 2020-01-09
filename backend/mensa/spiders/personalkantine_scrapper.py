@@ -16,6 +16,7 @@ class Personalkantine(scrapy.Spider):
             mensa_name_list = []
             mensa_name_list.append(mensa_name)
             personal["mensa_name"] = mensa_name_list
+            personal["mensa_id"] = ["1"]
             personal["date"] = meal_plan[i].xpath('.//h2/text()').getall()
             meals_of_the_day = meal_plan[i].xpath('.//ul/li')
             personal["first"] = meals_of_the_day[0].xpath('.//h4/text()').getall()

@@ -17,10 +17,13 @@ class Mathecafe(scrapy.Spider):
            
             for j in range(len(days)):
                 mensa_name = Mathecafe.name
+                mc["mensa_id"] = ["1"]
                 mensa_name_list = []
                 mensa_name_list.append(mensa_name)
                 mc["mensa_name"] = mensa_name_list
+                #mc["mensa_id"] = []
                 mc["date"] = days[j].xpath('./text()').getall()
+                
                 mc["first"] = meals[j].xpath('.//li[1]//h4/span[@class="item_title"]/text()').getall()
                 mc["first_price"] = meals[j].xpath('.//li[1]//span[@class="menu-list__item-price"]/text()').getall()
                 mc["second"] = meals[j].xpath('.//li[2]//h4/span[@class="item_title"]/text()').getall()

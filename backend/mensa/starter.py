@@ -8,9 +8,9 @@ from mensa.time_calculator import calculate_days
 
 def start_scrapers():
     dates = calculate_days()
-    call_cafeterias(dates)
+    #call_cafeterias(dates)
     #call_mathe_cafe()
-    #call_personalkantine()
+    call_personalkantine()
 def call_cafeterias(dates):
     #cafeteria_ids = ['321', '631', '540', '657', '538', '539']
     cafeteria_ids = ['321']
