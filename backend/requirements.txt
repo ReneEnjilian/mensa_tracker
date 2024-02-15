@@ -3,5 +3,5 @@ Flask-Cors
 SQLAlchemy
 Werkzeug
 Flask-SQLAlchemy
-Scrapy==1.7.3
+Scrapy==2.11.1
 Flask-Migrate
